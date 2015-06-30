@@ -1,0 +1,7 @@
+div.active{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #555555;
+  z-index: 100;
+}
