@@ -1,0 +1,46 @@
+body {
+  background: #999999;
+}
+.maincontainer {
+  height: 200px;
+  width: 200px;
+  background: #EEEEEE;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 15px;
+}
+#leftc {
+  position: relative;
+  height: 200px;
+  width: 100px;
+  background: #FF9999;
+  display: inline;
+}
+#rightc {
+  position: relative;
+  height: 200px;
+  width: 100px;
+  background: #66CCFF;
+  display: inline;
+}
+#container {
+  border-radius: 100%;
+}
+.half {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 100%;
+}
+#left {
+  background: #FF9999;
+  clip: rect(0px,95px,200px,0px);
+  z-index: 0;
+  
+}
+#right {
+  background: #66CCFF;
+  clip: rect(0px,200px,200px,105px);
+  z-index: 0;
+}
