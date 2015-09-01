@@ -10,22 +10,35 @@ body {
   margin-top: 20px;
   padding: 15px;
 }
+#test {
+  float: right;
+}
 #leftc {
-  position: relative;
+  position: absolute;
   height: 200px;
   width: 100px;
   background: #FF9999;
-  display: inline;
+  overflow: hidden;
+  z-index: 1;
+}
+#clip-left {
+  position: absolute;
+  clip: rect(0px,95px,200px,0px);
 }
 #rightc {
-  position: relative;
+  position: absolute;
   height: 200px;
-  width: 100px;
-  background: #66CCFF;
-  display: inline;
+  width: 200px;
+  overflow: hidden;
+  z-index: 5;
+}
+#clip-right {
+  position: absolute;
+  clip: rect(0px,200px,200px,105px)  
 }
 #container {
   border-radius: 100%;
+  float: left;
 }
 .half {
   height: 200px;
