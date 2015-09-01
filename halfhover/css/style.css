@@ -11,13 +11,14 @@ body {
   padding: 15px;
 }
 #test {
-  float: right;
+  border-radius: 100%;
+  float: left;
+  margin-left: 20px;
 }
 #leftc {
   position: absolute;
   height: 200px;
-  width: 100px;
-  background: #FF9999;
+  width: 200px;
   overflow: hidden;
   z-index: 1;
 }
