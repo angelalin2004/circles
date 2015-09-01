@@ -10,51 +10,32 @@ body {
   margin-top: 20px;
   padding: 15px;
 }
-#test {
+#container1 {
   border-radius: 100%;
   float: left;
   margin-left: 20px;
 }
-#leftc {
-  position: absolute;
+.halfc {
   height: 200px;
   width: 200px;
+  position: absolute;
   overflow: hidden;
+  border-radius: 100%;
+}
+#leftc {
   z-index: 1;
 }
-#clip-left {
-  position: absolute;
-  clip: rect(0px,95px,200px,0px);
-}
 #rightc {
+  z-index: 10;
+}
+.clip {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  z-index: 5;
+  transition: clip 1.5s;
+  transition-timing-function: ease-out;
+}
+#clip-left {
+  clip: rect(0px,95px,200px,0px);
 }
 #clip-right {
-  position: absolute;
   clip: rect(0px,200px,200px,105px)  
-}
-#container {
-  border-radius: 100%;
-  float: left;
-}
-.half {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  border-radius: 100%;
-}
-#left {
-  background: #FF9999;
-  clip: rect(0px,95px,200px,0px);
-  z-index: 0;
-  
-}
-#right {
-  background: #66CCFF;
-  clip: rect(0px,200px,200px,105px);
-  z-index: 0;
 }
