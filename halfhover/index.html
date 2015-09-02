@@ -19,8 +19,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <div class="maincontainer" id="container1" onmouseleave="halfLeave()">
-  <div class="halfc" id="leftc"><div class="clip" id="clip-left" onmouseenter="leftEnter()" onmouseleave="halfLeave()"><img src="http://placehold.it/200x200/FF9999/FFFFFF?text=!!!!!"></div></div>
-  <div class="halfc" id="rightc"><div class="clip" id="clip-right" onmouseenter="rightEnter()" onmouseleave="halfLeave()"><img src="http://placehold.it/200x200/66CCFF?text=?????"></div></div>
+  <div class="halfc" id="leftc">
+    <div class="clip" id="clip-left" onmouseenter="leftEnter()" onmouseleave="halfLeave()">
+      <img src="http://placehold.it/200x200/FF9999/FFFFFF?text=!!!!!">
+    </div>
+  </div>
+  <div id="textc">
+    <span>"This is some text for the left side of this div."</span>
+  </div>
+  <div class="halfc" id="rightc">
+    <div class="clip" id="clip-right" onmouseenter="rightEnter()" onmouseleave="halfLeave()">
+      <img src="http://placehold.it/200x200/66CCFF?text=?????">
+    </div>
+  </div>
 </div>
     
         <script src="js/index.js"></script>
