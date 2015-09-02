@@ -5,8 +5,6 @@ body {
   height: 200px;
   width: 200px;
   background: #EEEEEE;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
   padding: 12px;
 }
@@ -34,33 +32,52 @@ body {
 .clip {
   position: absolute;
   transition: clip 1.25s;
+  -webkit-transition-timing-function: ease-out; /* Safari and Chrome */
   transition-timing-function: ease-out;
 }
 #clip-left {
   clip: rect(0px,95px,200px,0px);
 }
 #clip-right {
-  clip: rect(0px,200px,200px,105px)  
+  clip: rect(0px,200px,200px,105px);  
 }
 img {
   position: absolute;
   z-index: 1;
 }
-#textc {
+.half-text {
+  display: inline;
   position: absolute;
-  z-index:20;
-  word-wrap: break-word;
-  height: 200px;
-  width: 0px;
-  overflow: hidden;
-  transition: width 1.25s;
-  transition-timing-function: ease-out;
-  border-radius: 100%;
-  margin-top: 6%;
   text-align: center;
-}
-span {
-  margin-left: auto;
-  margin-right: auto;
+  height: 120px;
+  width: 120px;
+  opacity: 0.0;
+  overflow: hidden;
+  transition: width 1s, opacity 0.9s;
+  -webkit-transition-timing-function: ease-out; /* Safari and Chrome */
+  transition-timing-function: ease-out;
   font-family: Arial, sans-serif;
+  font-size: 80%;
+  word-wrap: break-word;
+  margin: 40px;
+}
+#left-text {
+  z-index: 20;
+}
+#right-text {
+  z-index: 30;
+}
+#title1 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: 50;
+  text-align: center;
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+  font-size: 200%;
+  color: #777777;
+  opacity: 0.75;  
+  transition: opacity 1.5s;
+  display: inline;
 }
