@@ -5,16 +5,19 @@ body {
   height: 200px;
   width: 200px;
   background: #EEEEEE;
-  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px;
 }
 #container1 {
   border-radius: 100%;
-  float: left;
-  margin-left: 20px;
+  position:relative;
 }
 #container2 {
-  float:left;
+  border-radius:100%;
+  position: relative;
+  margin-top: 25px;
+  
 }
 .halfc {
   height: 200px;
@@ -80,4 +83,17 @@ img {
   opacity: 0.75;  
   transition: opacity 1.5s;
   display: inline;
+}
+#timenums {
+  background: #eeeeee;
+  color: #eeeeee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius:100%;
+}
+#time-clock {
+  font-size: 250%;
+  margin-bottom: 10px;
 }

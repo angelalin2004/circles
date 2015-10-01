@@ -51,3 +51,41 @@ function halfLeave() {
   $("#right-text").css("opacity","0.0");
   currentSide = "none";
 }
+
+function timePassed() {
+  var double_digits = 10;
+  date = new Date();
+  hours = date.getHours();
+  minutes = date.getMinutes();
+  seconds = date.getSeconds();
+  hours_const = hours;
+  minutes_const = minutes;
+  seconds_const = seconds;
+	
+  if (hours < double_digits) {
+    hours = "0" + hours_const;  
+  }
+  if (minutes < double_digits) {
+    minutes = "0" + minutes_const;  
+  }
+  if (seconds < double_digits) {
+    seconds = "0" + seconds_const;  
+  }
+
+  document.getElementById('time-clock').innerHTML = hours + ":" + minutes + ":" + seconds;
+  var colorString = "#" + hours + minutes + seconds
+  document.getElementById('time-color').innerHTML = colorString;
+  $("#timenums").css("background",colorString);
+  /*
+  $("#container2").css("background",colorString);
+  $("#timenums").css("color",colorString);
+  */
+}
+
+var timer;
+var start = startTime();
+
+function startTime( ) {
+  console.log("got here");
+  timer = setInterval('timePassed()', 1000);
+}
